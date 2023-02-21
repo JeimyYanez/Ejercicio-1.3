@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio3.Views.PageAcciones">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Código" Padding="10,10,0,0" Margin="11,0,11,0" FontSize="Default"/>
+            <Entry x:Name="id" Placeholder="Codigo" Keyboard="Text" Margin="10,0,10,0" Text="{Binding Id}" IsEnabled="False"/>
+
+
+            <Label Text="Nombres" FontSize="Default" Padding="10,10,0,0" Margin="11,0,11,0"/>
+            <Entry x:Name="nombres" Keyboard="Text" Text="{Binding Nombre}" Margin="10,0,10,0"/>
+            <Label Text="Apellidos" FontSize="Default" Padding="10,10,0,0" Margin="11,0,11,0"/>
+            <Entry x:Name="apellidos" Keyboard="Text" Text="{Binding Apellidos}"  Margin="10,0,10,0"/>
+            <Label Text="Edad" FontSize="Default" Padding="10,10,0,0" Margin="11,0,11,0"/>
+            <Entry x:Name="edad" Keyboard="Numeric" Text="{Binding Edad}" Margin="10,0,10,0"/>
+            <Label Text="Correo" FontSize="Default" Padding="10,10,0,0" Margin="11,0,11,0"/>
+            <Entry x:Name="correo" Keyboard="Email"  Text="{Binding Correo}" Margin="10,0,10,0"/>
+            <Label Text="Direccion" FontSize="Default" Padding="10,10,0,0" Margin="11,0,11,0"/>
+            <Entry x:Name="direccion" Keyboard="Text" Text="{Binding Direccion}" Margin="10,0,10,0"/>
+
+
+
+            <Button Grid.Column="2" x:Name="btnDelete" Text="Eliminar" Clicked="btnDelete_Clicked"  Margin="10,0,10,0" BackgroundColor="Aqua" FontSize="Default"/>
+            <Button Grid.Column="1" x:Name="btnUpdate" Text="Actualizar"  Clicked="btnUpdate_Clicked" Margin="10,0,10,0" BackgroundColor="Aqua" FontSize="Default"/>
+
+          
+        
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
